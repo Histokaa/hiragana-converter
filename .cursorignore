@@ -1,0 +1,9 @@
+
+/node_modules
+/build
+/temp
+.DS_Store
+/my-template/node_modules
+/my-template/build
+/my-template/temp
+/my-template/.DS_Store
