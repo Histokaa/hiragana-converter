@@ -1,25 +1,90 @@
-I am creating a project_overview.md file for my development project. Below are the details. Use my answers to generate a clean, professional markdown document with sections like Overview, Goals, Key Features, Tech Stack, Architecture, Timeline, and Future Work.
+# Kana Converter - Project Overview
 
-Project Overview
+## Overview
 
-    What is the name of the project?
+**Kana Converter** is a simple, user-friendly web application designed to provide seamless conversion between Japanese writing systems. The project focuses on creating a clean, single-page interface that allows users to convert text between Hiragana, Katakana, and Romaji without the need for additional keyboard installations or complex setup.
 
-    What is the purpose of the project?
+## Goals
 
-    Who is the intended audience or end user?
+### Primary Goals
 
-    What problem does this project solve?
+- Create a simple, intuitive one-page converter for Japanese writing systems
+- Provide real-time conversion between Hiragana (ひらがな), Katakana (カタカナ), and Romaji
+- Deliver an exceptional user interface and user experience with modern styling
+- Eliminate the need for users to install virtual keyboards for Japanese input
 
-Goals and Objectives 5. What are the primary goals of this project? 6. Are there any secondary goals or stretch objectives?
+### Secondary Goals
 
-Key Features 7. What are the core features the project will include? 8. Are there any planned future features or enhancements?
+- Ensure responsive design across all device types
+- Implement smooth animations and transitions for enhanced user experience
+- Optimize for fast loading and minimal resource usage
+- Create an accessible interface following modern web standards
 
-Tech Stack 9. What programming languages, frameworks, and tools are being used? 10. Why were these technologies chosen?
+## Key Features
 
-Architecture & Design 11. What is the general architecture of the system? (e.g., client-server, microservices, monolith) 12. Are there any major design patterns or principles you are following?
+### Core Features
 
-Project Timeline 13. What is the development timeline? (milestones, sprints, deadlines) 14. What is the current status of the project?
+- **Four Input Fields**:
+  - Universal input (Everything)
+  - Hiragana-specific input
+  - Katakana-specific input
+  - Romaji-specific input
+- **Real-time Conversion**: Automatic conversion between all writing systems as the user types
+- **Bidirectional Support**: Convert from any input field to all other formats simultaneously
+- **Modern UI/UX**: Highly stylized interface optimized for usability and visual appeal
 
-Future Work & Considerations 15. What are the known limitations or challenges? 16. Are there any plans for scaling, deployment, or open-sourcing the project?
+### Example Functionality
 
-Once I provide my answers below, generate the project_overview.md file accordingly.
+- Input: "shi" (Romaji) → Output: し (Hiragana), シ (Katakana), shi (Romaji)
+- Input: "こんにちは" (Hiragana) → Output: コンニチハ (Katakana), konnichiha (Romaji)
+
+## Tech Stack
+
+### Frontend & Backend
+
+- **Next.js**: Full-stack React framework for both client-side rendering and API routes
+- **TypeScript**: For type safety and enhanced development experience
+- **Tailwind CSS**: Utility-first CSS framework for rapid, responsive design
+- **Framer Motion**: Animation library for smooth transitions and interactive elements
+
+### Technology Rationale
+
+- **Next.js**: Chosen for its flexibility, built-in API routes, optimized performance, and excellent developer experience
+- **Tailwind CSS**: Enables rapid development of custom, responsive designs without writing custom CSS
+- **Framer Motion**: Provides professional-grade animations to enhance user interaction and visual feedback
+
+## Architecture
+
+### Design Pattern
+
+- **Single Page Application (SPA)**: Monolithic frontend with minimal backend requirements
+- **Component-Based Architecture**: Modular React components for maintainability and reusability
+- **Client-Side Processing**: Conversion logic handled entirely in the browser for instant results
+
+### System Architecture
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   User Input    │───▶│  Conversion     │───▶│   Display       │
+│   (Any Kana)    │    │   Engine        │    │   Results       │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                              │
+                              ▼
+                       ┌─────────────────┐
+                       │  Real-time      │
+                       │  Validation     │
+                       └─────────────────┘
+```
+
+
+### Planned Enhancements
+
+- **Pronunciation Guide**: Audio playback for proper pronunciation learning
+- **Keyboard Shortcuts**: Power-user features for faster input switching
+- **Dark Mode**: Theme switching for improved user preference support
+
+### Technical Considerations
+
+- **Scalability**: Current client-side architecture supports high concurrent usage without server load
+- **Performance**: Lightweight implementation ensures fast loading on all devices
+- **Accessibility**: Future updates will include screen reader support and keyboard navigation

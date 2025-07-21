@@ -24,7 +24,7 @@ alwaysApply: true
 "safety_requirements": [
 "NEVER break type safety",
 "ALWAYS maintain proper error handling",
-"ALWAYS document new code",
+"ALWAYS modify `.notes/task_list.md` once task updated",
 "NEVER stop before you have done the needed tasks",
 "ALWAYS use supabase MCP when modifying database"
 ],

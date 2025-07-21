@@ -7,3 +7,20 @@
 /my-template/build
 /my-template/temp
 /my-template/.DS_Store
+
+# Kana Converter Next.js project ignores
+/kana-converter/node_modules
+/kana-converter/.next
+/kana-converter/out
+/kana-converter/build
+/kana-converter/dist
+/kana-converter/.env.local
+/kana-converter/.env.development.local
+/kana-converter/.env.test.local
+/kana-converter/.env.production.local
+/kana-converter/npm-debug.log*
+/kana-converter/yarn-debug.log*
+/kana-converter/yarn-error.log*
+/kana-converter/.pnpm-debug.log*
+/kana-converter/.DS_Store
+/kana-converter/Thumbs.db
