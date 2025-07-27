@@ -40,7 +40,6 @@ export const HIRAGANA_TO_ROMAJI: Record<string, string> = {
 	て: "te",
 	と: "to",
 	だ: "da",
-	ぢ: "ji",
 	づ: "zu",
 	で: "de",
 	ど: "do",
